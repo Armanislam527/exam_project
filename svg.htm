@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Force Diagrams</title>
+</head>
+<body>
+  <svg width="600" height="200">
+    <!-- Figure (a) -->
+    <rect x="20" y="40" width="80" height="40" stroke="black" fill="none" />
+    <text x="10" y="80" font-size="12">(a)</text>
+    <text x="15" y="60" font-size="12">F</text>
+    <line x1="0" y1="60" x2="20" y2="60" stroke="black" marker-end="url(#arrow)" />
+    <text x="110" y="60" font-size="12">F</text>
+    <line x1="100" y1="60" x2="120" y2="60" stroke="black" marker-end="url(#arrow)" />
+
+    <!-- Figure (b) -->
+    <polygon points="200,40 240,90 160,90" stroke="black" fill="none" />
+    <text x="170" y="100" font-size="12">(b)</text>
+    <text x="152" y="93" font-size="12">A</text>
+    <text x="242" y="93" font-size="12">C</text>
+    <text x="195" y="35" font-size="12">B</text>
+    <line x1="200" y1="40" x2="240" y2="90" stroke="black" marker-end="url(#arrow)" />
+    <line x1="240" y1="90" x2="160" y2="90" stroke="black" marker-end="url(#arrow)" />
+    <line x1="160" y1="90" x2="200" y2="40" stroke="black" marker-end="url(#arrow)" />
+
+    <!-- Figure (c) -->
+    <rect x="350" y="40" width="40" height="80" stroke="black" fill="none" />
+    <text x="340" y="135" font-size="12">(c)</text>
+    <text x="365" y="35" font-size="12">F</text>
+    <line x1="370" y1="20" x2="370" y2="40" stroke="black" marker-end="url(#arrow)" />
+    <text x="365" y="135" font-size="12">F</text>
+    <line x1="370" y1="120" x2="370" y2="140" stroke="black" marker-end="url(#arrow)" />
+
+    <!-- Arrow marker definition -->
+    <defs>
+      <marker id="arrow" markerWidth="10" markerHeight="10" refX="10" refY="3" orient="auto">
+        <path d="M0,0 L0,6 L9,3 z" fill="black" />
+      </marker>
+    </defs>
+  </svg>
+</body>
+</html>
