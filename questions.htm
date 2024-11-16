@@ -33,13 +33,11 @@
           div.className = "question-container";
           div.innerHTML = `
           <p><strong>Question ${q.questionNumber}:</strong> ${q.question}</p>
-          <img src="${q.image}" alt="Diagram for question ${
-            q.questionNumber
-          }" width="150" height="150" position="left" >
+          <img src="${q.image}" alt="Diagram for question ${q.questionNumber}" width="150" height="150" position="left" >
           <ul>
             ${Object.values(q.options)
               .map((opt) => `<li>${opt}</li>`)
-              .join("")}
+              .join(" ")}
           </ul>
           <p><strong>Answer:</strong> ${q.answer}</p>
           <p><em>${q.description}</em></p>
