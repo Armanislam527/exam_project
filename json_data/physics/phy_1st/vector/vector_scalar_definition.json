@@ -25,24 +25,24 @@
     },
     {
         "Question Number": "3",
-        "Question": "অবস্থান ভেক্টর r= 3xi + 2yj + 4zk হলে V.r =?",
-        "Options": {
+        "Question": "অবস্থান ভেক্টর ⃗r= 3xi + 2yj + 4zk হলে ⃗▽.⃗r =?",
+        "Options" : {
             "1": "a. 9",
             "2": "b. 5",
             "3": "c. 10",
             "4": "d. 12"
         },
         "Correct Answer": "2",
-        "Explanation": "অবস্থান ভেক্টর r = (i + j + k) (3x - 2y + 4z) = 3 - 2 + 4 = 5।"
+        "Explanation": "⃗▽.⃗r =((∂/∂x)i+(∂/∂y)j+(∂/∂z)k  (3x - 2y + 4z) = 3 - 2 + 4 = 5।"
     },
     {
         "Question Number": "4",
-        "Question": "নিচের কোনটির ক্ষেত্রে 7. = 0 সত্য?",
+        "Question": "নিচের কোনটির ক্ষেত্রে ⃗▽.⃗v = 0 সত্য?",
         "Options": {
             "1": "a. (a)",
             "2": "b. (b)",
             "3": "c. (c)",
-            "4": "d. (d)"
+            "4": "d. সবগুলাই সত্য"
         },
         "Correct Answer": "3",
         "Explanation": "এটি নির্দিষ্ট তথ্যের অভাবে ব্যাখ্যা করা সম্ভব নয়।"

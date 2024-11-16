@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Circular Force Diagrams</title>
+</head>
+<body>
+  <svg width="600" height="200">
+    <!-- Figure (a): Radial outward arrows -->
+    <circle cx="60" cy="60" r="20" stroke="black" fill="none" />
+    <text x="40" y="100" font-size="12">(a)</text>
+    <!-- Outward arrows around the circle -->
+    <line x1="60" y1="30" x2="60" y2="10" stroke="black" marker-end="url(#arrow)" />
+    <line x1="60" y1="90" x2="60" y2="110" stroke="black" marker-end="url(#arrow)" />
+    <line x1="30" y1="60" x2="10" y2="60" stroke="black" marker-end="url(#arrow)" />
+    <line x1="90" y1="60" x2="110" y2="60" stroke="black" marker-end="url(#arrow)" />
+    <line x1="45" y1="45" x2="30" y2="30" stroke="black" marker-end="url(#arrow)" />
+    <line x1="75" y1="45" x2="90" y2="30" stroke="black" marker-end="url(#arrow)" />
+    <line x1="45" y1="75" x2="30" y2="90" stroke="black" marker-end="url(#arrow)" />
+    <line x1="75" y1="75" x2="90" y2="90" stroke="black" marker-end="url(#arrow)" />
+
+    <!-- Figure (b): Radial inward arrows with cross -->
+    <circle cx="250" cy="60" r="20" stroke="black" fill="none" />
+    <line x1="235" y1="45" x2="265" y2="75" stroke="black" />
+    <line x1="235" y1="75" x2="265" y2="45" stroke="black" />
+    <text x="230" y="100" font-size="12">(b)</text>
+    <!-- Inward arrows around the circle -->
+    <!-- <line x1="260" y1="30" x2="60" y2="10" stroke="black" marker-end="url(#arrow)" /> -->
+    <line x1="250" y1="30" x2="250" y2="10" stroke="black" marker-end="url(#arrow-inward)" />
+    <line x1="250" y1="90" x2="250" y2="110" stroke="black" marker-end="url(#arrow-inward)" />
+    <line x1="230" y1="60" x2="210" y2="60" stroke="black" marker-end="url(#arrow-inward)" />
+    <line x1="270" y1="60" x2="290" y2="60" stroke="black" marker-end="url(#arrow-inward)" />
+
+    <!-- Figure (c): Parallel lines with horizontal arrows -->
+    <circle cx="440" cy="60" r="20" stroke="black" fill="none" />
+    <text x="420" y="100" font-size="12">(c)</text>
+    <!-- Horizontal arrows crossing the circle -->
+    <line x1="400" y1="50" x2="420" y2="50" stroke="black" marker-end="url(#arrow)" />
+    <line x1="400" y1="60" x2="420" y2="60" stroke="black" marker-end="url(#arrow)" />
+    <line x1="400" y1="70" x2="420" y2="70" stroke="black" marker-end="url(#arrow)" />
+    <line x1="460" y1="50" x2="480" y2="50" stroke="black" marker-end="url(#arrow)" />
+    <line x1="460" y1="60" x2="480" y2="60" stroke="black" marker-end="url(#arrow)" />
+    <line x1="460" y1="70" x2="480" y2="70" stroke="black" marker-end="url(#arrow)" />
+
+    <!-- Arrow marker definitions -->
+    <defs>
+      <!-- Outward arrow -->
+      <marker id="arrow" markerWidth="10" markerHeight="10" refX="10" refY="3" orient="auto">
+        <path d="M0,0 L0,6 L9,3 z" fill="black" />
+      </marker>
+      <!-- Inward arrow -->
+      <marker id="arrow-inward" markerWidth="10" markerHeight="10" refX="0" refY="3" orient="auto">
+        <path d="M9,0 L9,6 L0,3 z" fill="black" />
+      </marker>
+    </defs>
+  </svg>
+      <div>[
+        {
+          "questionNumber": "1",
+          "question": "Find the force (F) if F = ma and m = 5 kg, a = 2 m/s².",
+          "options": {
+            "1": "10 N",
+            "2": "15 N",
+            "3": "20 N",
+            "4": "25 N"
+          },
+          "answer": "1",
+          "description": "F = ma = 5 × 2 = 10 N"
+        },
+        {
+          "questionNumber": "2",
+          "question": "Solve \\( x^2 - 4x + 4 = 0 \\).",
+          "options": {
+            "1": "\\( x = 2 \\)",
+            "2": "\\( x = -2 \\)",
+            "3": "\\( x = \\pm 2 \\)",
+            "4": "No solution"
+          },
+          "answer": "1",
+          "description": "The equation \\( (x - 2)^2 = 0 \\) has a solution \\( x = 2 \\)."
+        },
+        {
+          "questionNumber": "3",
+          "question": "What is the value of \\( \\frac{1}{2} + \\frac{2}{3} \\)?",
+          "options": {
+            "1": "\\( \\frac{5}{6} \\)",
+            "2": "\\( \\frac{7}{6} \\)",
+            "3": "\\( 1 \\)",
+            "4": "\\( 2 \\)"
+          },
+          "answer": "2",
+          "description": "The sum \\( \\frac{1}{2} + \\frac{2}{3} = \\frac{3}{6} + \\frac{4}{6} = \\frac{7}{6} \\)."
+        }
+      ]
+      </div>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+</body>
+</html>
