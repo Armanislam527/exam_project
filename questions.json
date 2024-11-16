@@ -1,0 +1,27 @@
+[
+    {
+      "questionNumber": "1",
+      "question": "What does the diagram represent?",
+      "image": "figure-a.svg",
+      "options": ["Outward Force", "Inward Force", "Parallel Lines", "None of the above"],
+      "answer": "Outward Force",
+      "description": "The diagram represents outward radial forces."
+    },
+    {
+      "questionNumber": "2",
+      "question": "What does the second diagram depict?",
+      "image": "figure-b.svg",
+      "options": ["Outward Force", "Inward Force", "Parallel Lines", "None of the above"],
+      "answer": "Inward Force",
+      "description": "The diagram represents inward radial forces."
+    },
+    {
+      "questionNumber": "3",
+      "question": "What does the third diagram show?",
+      "image": "figure-c.svg",
+      "options": ["Outward Force", "Inward Force", "Parallel Lines", "None of the above"],
+      "answer": "Parallel Lines",
+      "description": "The diagram represents parallel forces crossing the circle."
+    }
+  ]
+  

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Circular Force Diagrams</title>
+    <style>
+      .question-container {
+        margin-bottom: 20px;
+      }
+      .question-container img {
+        display: block;
+        margin: 10px auto;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Physics Diagrams and Questions</h1>
+    <div id="questions"></div>
+
+    <script>
+      async function loadQuestions() {
+        // Fetch the JSON file
+        const response = await fetch("questions.json");
+        const questions = await response.json();
+
+        // Select the container
+        const container = document.getElementById("questions");
+
+        // Iterate over each question and render it
+        questions.forEach((q) => {
+          const div = document.createElement("div");
+          div.className = "question-container";
+          div.innerHTML = `
+          <p><strong>Question ${q.questionNumber}:</strong> ${q.question}</p>
+          <img src="${q.image}" alt="Diagram for question ${
+            q.questionNumber
+          }" width="150" height="150" position="left" >
+          <ul>
+            ${Object.values(q.options)
+              .map((opt) => `<li>${opt}</li>`)
+              .join("")}
+          </ul>
+          <p><strong>Answer:</strong> ${q.answer}</p>
+          <p><em>${q.description}</em></p>
+        `;
+          container.appendChild(div);
+        });
+      }
+
+      // Load questions on page load
+      loadQuestions();
+    </script>
+  </body>
+</html>
